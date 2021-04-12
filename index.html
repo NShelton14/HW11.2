@@ -11,10 +11,32 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Frontend Starter</title>
+    <title>HW11.2</title>
   </head>
   <body>
-    <h1>Frontend Starter</h1>
+    <h1>HW11.2</h1>
+    <form class="flex flex--justify-content">
+      <div class="flex--flex-direction">
+        <div>
+          <label for="text">Write something!</label>
+          <input type="text" name="" id="" />
+        </div>
+        <div>
+          <label for="size">Text Size</label>
+          <input type="range" name="size" id="size" min="0" max="100" />
+          <p id="textsize">50</p>
+        </div>
+        <div>
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color" />
+          <p id="textcolor"></p>
+        </div>
+      </div>
+    </form>
+    <div class="flex flex--justify-content">
+      <p id="textout"></p>
+    </div>
+
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
