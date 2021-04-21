@@ -22,9 +22,17 @@
           <input type="text" name="" id="" />
         </div>
         <div>
-          <label for="size">Text Size</label>
-          <input type="range" name="size" id="size" min="0" max="100" />
+          <label for="range">Text Size</label>
+          <input type="range" name="range" id="range" min="0" max="100" />
           <p id="textsize">50</p>
+        </div>
+        <div>
+          <button type="submit" for="mini">Set minimum size.</button>
+          <input type="number" name="mini" id="mini" />
+        </div>
+        <div>
+          <button type="submit" for="maxa">Set maximum size.</button>
+          <input type="number" name="maxa" id="maxa" />
         </div>
         <div>
           <label for="color">Color</label>
@@ -33,6 +41,7 @@
         </div>
       </div>
     </form>
+
     <div class="flex flex--justify-content">
       <p id="textout"></p>
     </div>
