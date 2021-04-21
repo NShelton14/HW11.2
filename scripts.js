@@ -2,7 +2,6 @@ const textsize = document.getElementById('textsize');
 const textcolor = document.getElementById('textcolor');
 const textout = document.getElementById('textout');
 const range = document.getElementById('range');
-
 document
   .querySelector('input[type="range"]')
   .addEventListener('input', event => {
@@ -23,8 +22,10 @@ document
     textout.innerText = event.target.value;
   });
 
-document.getElementById('mini').addEventListener('submit', event => {
-  event.preventDefault();
-
+document.getElementById('min-num').addEventListener('keyup', event => {
   range.min = event.target.value;
+});
+
+document.getElementById('max-num').addEventListener('keyup', event => {
+  range.max = event.target.value;
 });
